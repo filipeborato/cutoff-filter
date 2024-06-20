@@ -6,8 +6,9 @@
   ==============================================================================
 */
 
-#include "LPHPFilter/PluginProcessor.h"
-#include "LPHPFilter/PluginEditor.h"
+#include "YourPluginName/PluginProcessor.h"
+#include "YourPluginName/PluginEditor.h"
+
 
 //==============================================================================
 LPHPFilterAudioProcessor::LPHPFilterAudioProcessor()
