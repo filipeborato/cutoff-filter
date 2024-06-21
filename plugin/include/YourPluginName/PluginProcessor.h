@@ -8,12 +8,27 @@
 
 #pragma once
 
-#include <JuceHeader.h>
-#include "LowpassHighpassFilter.h"
+#include <juce_audio_processors/juce_audio_processors.h>
+#include <vector>
 
 //==============================================================================
 /**
 */
+class LowpassHighpassFilter
+{   
+    public:
+        void setHighpass(bool highpass);
+        void setCutoffFrequency(float cutoffFrequency);
+        void setSamplingRate(float samplingRate);
+        void processBlock(juce::AudioBuffer<float>&, juce::MidiBuffer&);
+    private:
+        bool highpass;
+        float cutoffFrequency;
+        float samplingRate;
+        std::vector<float> dnBuffer;
+};
+
+
 class LPHPFilterAudioProcessor  : public juce::AudioProcessor
 {
 public:
@@ -60,5 +75,5 @@ private:
     std::atomic<float>* highpassParameter = nullptr;
     LowpassHighpassFilter filter;
     //==============================================================================
-    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(LPHPFilterAudioProcessor);
+    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(LPHPFilterAudioProcessor);    
 };

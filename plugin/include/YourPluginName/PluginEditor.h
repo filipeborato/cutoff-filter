@@ -7,8 +7,6 @@
 */
 
 #pragma once
-
-#include <JuceHeader.h>
 #include "PluginProcessor.h"
 
 //==============================================================================
@@ -17,7 +15,7 @@
 class LPHPFilterAudioProcessorEditor  : public juce::AudioProcessorEditor
 {
 public:
-    LPHPFilterAudioProcessorEditor (LPHPFilterAudioProcessor&, juce::AudioProcessorValueTreeState vts);
+    LPHPFilterAudioProcessorEditor (LPHPFilterAudioProcessor&, juce::AudioProcessorValueTreeState& vts);
     ~LPHPFilterAudioProcessorEditor() override;
 
     //==============================================================================

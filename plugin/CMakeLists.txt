@@ -22,10 +22,10 @@ juce_add_plugin(${PROJECT_NAME}
 # Sets the source files of the plugin project.
 target_sources(${PROJECT_NAME}
     PRIVATE
-        source/PluginEditor.cpp
-        source/PluginProcessor.cpp
         ${INCLUDE_DIR}/PluginEditor.h
-        ${INCLUDE_DIR}/PluginProcessor.h
+        ${INCLUDE_DIR}/PluginProcessor.h        
+        source/PluginEditor.cpp
+        source/PluginProcessor.cpp        
 )
 
 # Sets the include directories of the plugin project.
@@ -39,6 +39,8 @@ target_include_directories(${PROJECT_NAME}
 target_link_libraries(${PROJECT_NAME}
     PRIVATE
         juce::juce_audio_utils
+        juce::juce_audio_processors
+        
     PUBLIC
         juce::juce_recommended_config_flags
         juce::juce_recommended_lto_flags

@@ -1,4 +1,4 @@
-#include <LPHPFilter/PluginProcessor.h>
+#include <YourPluginName/PluginProcessor.h>
 #include <gtest/gtest.h>
 
 namespace audio_plugin_test {
