@@ -1,6 +1,6 @@
 # CutOff - VST3
 
-This is an example of a vst3 plugin made using CMake and JUCE. The first version of Linux is available.
+This is an example of a vst3 plugin made using CMake and JUCE. The first VST3 version of Linux is available.
 
 ## Usage
 
