@@ -6,8 +6,8 @@
   ==============================================================================
 */
 
-#include "YourPluginName/PluginProcessor.h"
-#include "YourPluginName/PluginEditor.h"
+#include "CutOffPlugin/PluginProcessor.h"
+#include "CutOffPlugin/PluginEditor.h"
 
 //==============================================================================
 LPHPFilterAudioProcessorEditor::LPHPFilterAudioProcessorEditor (LPHPFilterAudioProcessor& p, juce::AudioProcessorValueTreeState& vts)
