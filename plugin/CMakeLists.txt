@@ -23,9 +23,11 @@ juce_add_plugin(${PROJECT_NAME}
 target_sources(${PROJECT_NAME}
     PRIVATE
         ${INCLUDE_DIR}/PluginEditor.h
-        ${INCLUDE_DIR}/PluginProcessor.h        
+        ${INCLUDE_DIR}/PluginProcessor.h
+        ${INCLUDE_DIR}/LowpassHighpassFilter.h        
         source/PluginEditor.cpp
-        source/PluginProcessor.cpp        
+        source/PluginProcessor.cpp
+        source/LowpassHighpassFilter.cpp        
 )
 
 # Sets the include directories of the plugin project.
