@@ -6,6 +6,9 @@ xcode-build/
 release-build/
 out/
 vs-build/
+.idea/
+cmake-build-debug/
+
 
 # Prerequisites
 *.d
