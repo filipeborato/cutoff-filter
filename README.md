@@ -2,6 +2,10 @@
 
 This is an example of a vst3 plugin made using CMake and JUCE. The first VST3 version of Linux is available.
 
+<p align="center">
+<img src="https://github.com/filipeborato/cutoff-filter/assets/21025394/47e6dbac-fa04-4dd0-a32d-5b15430fecda" width=50% height=50%>
+</p>
+
 ## Usage
 
 This is a template repository which means you can right click "Use this template" on GitHub and create your own repo out of it.
