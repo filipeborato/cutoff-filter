@@ -8,6 +8,7 @@
 
 #include "CutOffPlugin/PluginProcessor.h"
 #include "CutOffPlugin/PluginEditor.h"
+#include "BinaryData.h"
 
 //==============================================================================
 LPHPFilterAudioProcessorEditor::LPHPFilterAudioProcessorEditor (LPHPFilterAudioProcessor& p, juce::AudioProcessorValueTreeState& vts)
@@ -49,7 +50,8 @@ void LPHPFilterAudioProcessorEditor::paint (juce::Graphics& g)
 {
     // (Our component is opaque, so we must completely fill the background with a solid colour)
     //g.fillAll(getLookAndFeel().findColour(juce::ResizableWindow::backgroundColourId));
-
+    background = juce::ImageCache::getFromMemory(BinaryData::brushedMetalSHRUNK_jpg, BinaryData::brushedMetalSHRUNK_jpgSize);  
+    g.drawImageWithin(background, 0, 0, getWidth(), getHeight(), juce::RectanglePlacement::stretchToFit);
     g.setColour(juce::Colours::whitesmoke);
     g.setFont(15.0f);
     //g.drawFittedText ("Hello World!", getLocalBounds(), juce::Justification::centred, 1);

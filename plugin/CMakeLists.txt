@@ -19,6 +19,9 @@ juce_add_plugin(${PROJECT_NAME}
     PRODUCT_NAME "CutOffPlugin" # change this
 )
 
+juce_add_binary_data(LPHPBinaryData SOURCES
+    resource/brushedMetalSHRUNK.jpg
+)
 # Sets the source files of the plugin project.
 target_sources(${PROJECT_NAME}
     PRIVATE
@@ -42,6 +45,7 @@ target_link_libraries(${PROJECT_NAME}
     PRIVATE
         juce::juce_audio_utils
         juce::juce_audio_processors
+        LPHPBinaryData         
         
     PUBLIC
         juce::juce_recommended_config_flags
