@@ -35,6 +35,7 @@ private:
     std::unique_ptr<juce::AudioProcessorValueTreeState::ButtonAttachment>
         highpassAttachment;
     juce::Label highpassButtonLabel;
+    juce::Image background;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (LPHPFilterAudioProcessorEditor)
 };
